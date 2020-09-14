@@ -1,0 +1,30 @@
+{
+  "../../photoswipe": [
+    {
+      "id": "./node_modules/photoswipe/dist/photoswipe-ui-default.js",
+      "name": "./node_modules/photoswipe/dist/photoswipe-ui-default.js",
+      "file": "static/chunks/0.js",
+      "publicPath": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/photoswipe/dist/photoswipe.js",
+      "name": "./node_modules/photoswipe/dist/photoswipe.js",
+      "file": "static/chunks/0.js",
+      "publicPath": "static/chunks/0.js"
+    },
+    {
+      "id": "./src/photoswipe.ts",
+      "name": "./src/photoswipe.ts",
+      "file": "static/chunks/0.js",
+      "publicPath": "static/chunks/0.js"
+    }
+  ],
+  "./dev/noop": [
+    {
+      "id": "./node_modules/next/dist/client/dev/noop.js",
+      "name": "./node_modules/next/dist/client/dev/noop.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ]
+}
