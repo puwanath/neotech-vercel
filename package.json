@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start":"next start -p $PORT",
-    "build-and-start": "next build && next start",
-    "heroku-postbuild":"npm run build"
+    "heroku-postbuild":"npm run build",
+    "build-and-start": "next build && next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.13.1",
