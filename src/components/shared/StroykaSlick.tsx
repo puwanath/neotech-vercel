@@ -175,19 +175,11 @@ function StroykaSlickInner(props: StroykaSlickInnerProps) {
 
     useEffect(() => {
         slickNextRef.current = () => {
-            if (direction === 'rtl') {
-                originalSlickNextRef.current();
-            } else {
-                originalSlickNextRef.current();
-            }
+            originalSlickNextRef.current();
         };
 
         slickPrevRef.current = () => {
-            if (direction === 'rtl') {
-                originalSlickNextRef.current();
-            } else {
-                originalSlickPrevRef.current();
-            }
+            originalSlickPrevRef.current();
         };
     }, [direction]);
 
@@ -229,10 +221,6 @@ function StroykaSlickInner(props: StroykaSlickInnerProps) {
     // because react-slick displays them in the wrong order
     let reversedChildren = React.Children.toArray(children);
 
-    if (direction === 'rtl') {
-        reversedChildren = reversedChildren.slice(0);
-        reversedChildren.reverse();
-    }
 
     reversedChildren = reversedChildren.map((slide, index) => {
         // react-slick incorrectly adds the .slick-active class to slides
@@ -252,7 +240,7 @@ function StroykaSlickInner(props: StroykaSlickInnerProps) {
             className={classes}
             onMouseDown={onMousedown}
         >
-            <Slick {...otherProps} rtl={direction === 'rtl'} beforeChange={beforeChangeWrapper} ref={setSlickRef}>
+            <Slick {...otherProps} beforeChange={beforeChangeWrapper} ref={setSlickRef}>
                 {reversedChildren}
             </Slick>
         </div>
