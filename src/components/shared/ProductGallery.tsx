@@ -111,9 +111,6 @@ function ProductGallery(props: ProductGalleryProps) {
 
     const getIndexDependOnDir = useCallback((index: number) => {
         // we need to invert index id direction === 'rtl' due to react-slick bug
-        if (direction === 'rtl') {
-            return images.length - 1 - index;
-        }
 
         return index;
     }, [direction, images]);
@@ -139,9 +136,6 @@ function ProductGallery(props: ProductGalleryProps) {
             };
         });
 
-        if (direction === 'rtl') {
-            items.reverse();
-        }
 
         // noinspection JSUnusedGlobalSymbols
         const options: PhotoSwipe.Options = {
