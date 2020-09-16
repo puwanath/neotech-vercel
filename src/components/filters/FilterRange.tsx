@@ -46,14 +46,6 @@ function FilterRange(props: FilterRangeProps) {
     let fromLabel = from;
     let toLabel = to;
 
-    // since react-input-range does not support RTL direction,
-    // we just need to invert and swipe values
-    if (direction === 'rtl') {
-        [from, to] = [to * -1, from * -1];
-        [min, max] = [max * -1, min * -1];
-        [fromLabel, toLabel] = [from * -1, to * -1];
-    }
-
     // Update state from props.
     useEffect(() => {
         setState([propsFrom, propsTo]);
@@ -70,11 +62,6 @@ function FilterRange(props: FilterRangeProps) {
         // This is needed to fix a bug in react-input-range.
         [newFrom, newTo] = [Math.max(newFrom, min), Math.min(newTo, max)];
 
-        // since react-input-range does not support RTL direction,
-        // we just need to invert and swipe values
-        if (direction === 'rtl') {
-            [newFrom, newTo] = [newTo * -1, newFrom * -1];
-        }
 
         setState([newFrom, newTo]);
 
