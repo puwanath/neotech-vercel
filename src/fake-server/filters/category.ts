@@ -28,7 +28,7 @@ export default class CategoryFilterBuilder extends AbstractFilterBuilder<ICatego
     makeItems(products: IProduct[], value?: string): void {
         this.value = value || null;
 
-        const category = categoriesListData.find((x) => x.cat_slug === value);
+        const category = categoriesListData.find((x) => x.slug === value);
         // const categoryHasProductsFn = (x) => categoryHasProducts(x, productsData);
         const categoryHasProductsFn = () => true;
 
