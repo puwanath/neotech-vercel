@@ -1,1 +1,0 @@
-{"ast":null,"code":"const version = 1;\nexport default version;","map":{"version":3,"sources":["D:/xampp/htdocs/neo.co.th/nextapp/src/store/version.ts"],"names":["version"],"mappings":"AAAA,MAAMA,OAAO,GAAG,CAAhB;AAEA,eAAeA,OAAf","sourcesContent":["const version = 1;\n\nexport default version;\n"]},"metadata":{},"sourceType":"module"}
