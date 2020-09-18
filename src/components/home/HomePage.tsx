@@ -39,95 +39,18 @@ export interface HomePageProps {
 function HomePage(props: HomePageProps) {
     const { initData } = props;
 
-    /**
-     * Featured products.
-     */
-    const featuredProducts = useProductTabs(
-        useMemo(() => [
-            { id: 1, name: 'All', categorySlug: undefined },
-            { id: 2, name: 'Power Tools', categorySlug: 'power-tools' },
-            { id: 3, name: 'Hand Tools', categorySlug: 'hand-tools' },
-            { id: 4, name: 'Plumbing', categorySlug: 'plumbing' },
-        ], []),
-        (tab) => shopApi.getPopularProducts({ limit: 12, category: tab.categorySlug }),
-        initData?.featuredProducts,
-    );
-
-    /**
-     * Bestsellers.
-     */
-    const bestsellers = useDeferredData(() => (
-        shopApi.getPopularProducts({ limit: 7 })
-    ), [], initData?.bestsellers);
-
-    /**
-     * Latest products.
-     */
-    const latestProducts = useProductTabs(
-        useMemo(() => [
-            { id: 1, name: 'All', categorySlug: undefined },
-            { id: 2, name: 'Power Tools', categorySlug: 'power-tools' },
-            { id: 3, name: 'Hand Tools', categorySlug: 'hand-tools' },
-            { id: 4, name: 'Plumbing', categorySlug: 'plumbing' },
-        ], []),
-        (tab) => shopApi.getLatestProducts({ limit: 8, category: tab.categorySlug }),
-        initData?.latestProducts,
-    );
-
-    /**
-     * Product columns.
-     */
-    const columns = initData?.productColumns || useProductColumns(
-        useMemo(() => [
-            {
-                title: 'Top Rated Products',
-                source: () => shopApi.getTopRatedProducts({ limit: 3 }),
-            },
-            {
-                title: 'Special Offers',
-                source: () => shopApi.getDiscountedProducts({ limit: 3 }),
-            },
-            {
-                title: 'Bestsellers',
-                source: () => shopApi.getPopularProducts({ limit: 3 }),
-            },
-        ], []),
-    );
 
     return (
         <React.Fragment>
             <Head>
-                <title>{`Home Page Two — ${theme.name}`}</title>
+                <title>{`Home — ${theme.name}`}</title>
             </Head>
 
             {useMemo(() => <BlockSlideShow />, [])}
 
-            {useMemo(() => <BlockFeatures layout="boxed" />, [])}
+            {useMemo(() => <BlockBrands />, [])}
 
-            {useMemo(() => (
-                <BlockProductsCarousel
-                    title="Featured Products"
-                    layout="grid-5"
-                    rows={2}
-                    products={featuredProducts.data}
-                    loading={featuredProducts.isLoading}
-                    groups={featuredProducts.tabs}
-                    onGroupClick={featuredProducts.handleTabChange}
-                />
-            ), [featuredProducts])}
-
-            {useMemo(() => <BlockBanner />, [])}
-
-            {useMemo(() => (
-                <BlockProducts
-                    title="Bestsellers"
-                    layout="large-last"
-                    featuredProduct={bestsellers.data[0]}
-                    products={bestsellers.data.slice(1, 7)}
-                />
-            ), [bestsellers.data])}
-
-            {useMemo(() => (
+            {/* {useMemo(() => (
                 <BlockCategories
                     title="Popular Categories"
                     layout="compact"
@@ -135,22 +58,11 @@ function HomePage(props: HomePageProps) {
                 />
             ), [])}
 
-            {useMemo(() => (
-                <BlockProductsCarousel
-                    title="New Arrivals"
-                    layout="grid-5"
-                    products={latestProducts.data}
-                    loading={latestProducts.isLoading}
-                    groups={latestProducts.tabs}
-                    onGroupClick={latestProducts.handleTabChange}
-                />
-            ), [latestProducts])}
 
-            {useMemo(() => <BlockPosts title="Latest News" layout="grid-nl" posts={dataBlogPosts} />, [])}
+            {useMemo(() => <BlockPosts title="Latest News" layout="grid-nl" posts={dataBlogPosts} />, [])} */}
 
-            {useMemo(() => <BlockBrands />, [])}
+            
 
-            {useMemo(() => <BlockProductColumns columns={columns} />, [columns])}
         </React.Fragment>
     );
 }

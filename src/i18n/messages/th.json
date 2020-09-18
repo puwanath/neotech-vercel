@@ -7,9 +7,39 @@
     "topbar.myAccount": "My Account",
     "topbar.currency": "Currency",
     "topbar.language": "เลือกภาษา",
+    "topbar.privacy": "นโยบายความเป็นส่วนตัว",
+    "topbar.suppliers": "ผู้ผลิต",
+    "topbar.categories": "หมวดหมู่สินค้า",
+    "topbar.knowledge": "สาระหน้ารู้",
+    "topbar.news": "ข่าวสาร/อัพเดท",
+    "topbar.information": "ข้อมูลเพิ่มเติม",
+    "topbar.ouraddress": "ที่อยู่ของเรา",
+    "topbar.leaveusamessage": "ฝากข้อความถึงเรา",
+
+    "topbar.sendmessage": "ส่งข้อความ",
+    "topbar.message": "ข้อความ",
+    "topbar.subject": "หัวข้อ",
+    "topbar.email": "อีเมล์",
+    "topbar.yourname": "ชื่อ-สกุล",
+    "topbar.website": "เว็บไซต์",
+    "topbar.lineid": "ไลน์ไอดี",
+    "topbar.fax": "แฟกซ์",
+    "topbar.phone": "โทรศัพท์",
+    "topbar.newsletter": "สมัครรับข่าวสาร",
+
   
     "header.phoneLabel": "สายด่วนบริการลูกค้า",
     "header.phone": "(081-686-2922)",
 
-    "nav.home": "หน้าแรก"
+    "nav.home": "หน้าแรก",
+    "Home": "หน้าแรก",
+    "Products": "สินค้าของเรา",
+    "Knowledge": "สาระหน้ารู้",
+    "Categories": "หมวดหมู่สินค้า",
+    "Process": "กระบวนการ",
+    "Application": "การใช้งาน",
+    "News/Update": "ข่าวสาร/อัพเดท",
+    "Suppliers": "ผู้ผลิต",
+    "Abouts": "เกี่ยวกับเรา",
+    "Contacts": "ติดต่อเรา"
 }

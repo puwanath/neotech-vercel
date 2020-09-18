@@ -12,7 +12,7 @@ import DropdownLanguage from './DropdownLanguage';
 export default function Topbar() {
     const links = [
         { title: <FormattedMessage id="topbar.aboutUs" defaultMessage="About Us" />, url: '/about-us' },
-        { title: <FormattedMessage id="topbar.contacts" defaultMessage="Contacts" />, url: '/contact-us' },
+        { title: <FormattedMessage id="topbar.contacts" defaultMessage="Contact us" />, url: '/contact-us' },
     ];
 
     const linksList = links.map((item, index) => (

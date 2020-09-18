@@ -3,14 +3,14 @@ import React from 'react';
 
 // application
 import SocialLinks from '../shared/SocialLinks';
+import { FormattedMessage } from 'react-intl';
 
 function FooterNewsletter() {
     return (
         <div className="site-footer__widget footer-newsletter">
-            <h5 className="footer-newsletter__title">Newsletter</h5>
+            <h5 className="footer-newsletter__title"><FormattedMessage id="topbar.newsletter" defaultMessage="Newsletter" /></h5>
             <div className="footer-newsletter__text">
-                Praesent pellentesque volutpat ex, vitae auctor lorem pulvinar mollis felis
-                at lacinia.
+               
             </div>
 
             <form action="" className="footer-newsletter__form">

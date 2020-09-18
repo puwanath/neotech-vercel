@@ -1,18 +1,47 @@
 {
   "topbar.aboutUs": "About Us",
-  "topbar.contacts": "Contacts",
+  "topbar.contacts": "Contact us",
   "topbar.storeLocation": "Store Location",
   "topbar.trackOrder": "Track Order",
   "topbar.blog": "Blog",
   "topbar.myAccount": "My Account",
   "topbar.currency": "Currency",
   "topbar.language": "Language",
+  "topbar.privacy": "Privacy Policy",
+  "topbar.suppliers": "Suppliers",
+  "topbar.categories": "Categories",
+  "topbar.knowledge": "Knowledge",
+  "topbar.news": "News",
+  "topbar.information": "Information",
+  "topbar.ouraddress": "Our Address",
+  "topbar.leaveusamessage": "Leave us a Message",
+
+  "topbar.sendmessage": "Send Message",
+  "topbar.message": "Message",
+  "topbar.subject": "Subject",
+  "topbar.email": "Email",
+  "topbar.yourname": "Your name",
+  "topbar.website": "Website",
+  "topbar.lineid": "Line ID",
+  "topbar.fax": "Fax",
+  "topbar.phone": "Phone",
+  "topbar.newsletter": "Newsletter",
 
   "header.phoneLabel": "Customer Service",
   "header.phone": "(800) 060-0730",
 
   
-  "nav.home": "Home"
+  "nav.home": "Home",
+  "Home": "Home",
+  "Products": "Products",
+  "Knowledge": "Knowledge",
+  "Categories": "Categories",
+  "Process": "Process",
+  "Application": "Application",
+  "News/Update": "News/Update",
+  "Suppliers": "Suppliers",
+  "Abouts": "About us",
+  "Contacts": "Contact us"
 
 
 }

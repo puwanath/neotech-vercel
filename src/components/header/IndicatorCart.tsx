@@ -117,7 +117,7 @@ function IndicatorCart() {
         dropdown = (
             <div className="dropcart">
                 <div className="dropcart__empty">
-                    Your shopping cart is empty!
+                    Your cart is empty!
                 </div>
             </div>
         );

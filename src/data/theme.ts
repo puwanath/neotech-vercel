@@ -1,6 +1,6 @@
 export default {
-    name: 'Neo Tech',
-    fullName: 'Neo Tech',
+    name: 'Neotech Composite นีโอเทค คอมโพสิท ผู้นำเข้าอุปกรณ์คอมโพสิต ทุกชนิดราคาย่อมเยาว์',
+    fullName: 'Neotech Composite นีโอเทค คอมโพสิท',
     url: 'https://neo.co.th',
     author: {
         name: 'Kapongdesign',
@@ -11,5 +11,6 @@ export default {
         email: 'nattawut@neo.co.th',
         phone: '081-686-2922',
     },
-    apiurl: '127.0.0.1/core-api/',
+    // apiurl: 'http://127.0.0.1/neo.co.th/core-api/',
+    apiurl: 'http://27.254.158.19/~neo/core-api/',
 };

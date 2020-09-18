@@ -1,12 +1,8 @@
 import { INav } from '../interfaces/menus/nav';
 
-import languages from '../i18n';
-console.log(languages[0].locale);
-// data stubs
-
 const dataHeaderNavigation: INav = [
     {
-        title: (languages[0].locale=='en'?'Home':'หน้าแรก'),
+        title: 'Home',
         url: '/',
     },
     {
@@ -35,7 +31,7 @@ const dataHeaderNavigation: INav = [
     },
     {
         title: 'News/Update',
-        url: '/news-update',
+        url: '/news',
     },
     {
         title: 'Suppliers',
@@ -43,7 +39,7 @@ const dataHeaderNavigation: INav = [
         submenu:{
             type: 'megamenu',
             menu: {
-                size: 'nl',
+                size: 'xl',
                 columns: [
                     {
                         size: 12,
@@ -54,11 +50,11 @@ const dataHeaderNavigation: INav = [
         }
     },
     {
-        title: 'About us',
+        title: 'Abouts',
         url: '/about-us',
     },
     {
-        title: 'Contact us',
+        title: 'Contacts',
         url: '/contact-us'
     },
 ];

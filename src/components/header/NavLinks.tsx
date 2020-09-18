@@ -12,7 +12,8 @@ import Menu from './Menu';
 import { useDirection, useLanguage, useLocaleChange  } from '../../store/locale/localeHooks';
 
 import dataHeaderNavigation from '../../data/headerNavigation';
-
+// third-party
+import { FormattedMessage } from 'react-intl';
 
 function NavLinks() {
     const direction = useDirection();
@@ -68,7 +69,7 @@ function NavLinks() {
             <li key={index} className={classes} onMouseEnter={handleMouseEnter}>
                 <AppLink href={item.url} {...item.props}>
                     <span>
-                        {item.title}
+                        <FormattedMessage id={item.title} defaultMessage={item.title} />
                         {arrow}
                     </span>
                 </AppLink>

@@ -26,6 +26,10 @@ export type GetSuggestionsOptions = {
     limit?: number;
     category?: string;
 };
+export type GetCategoryLists = {
+    limit?: number;
+    category?: string;
+};
 
 function getProducts(shift: number, options: GetProductsOptions): Promise<IProduct[]> {
     const limit = options.limit || 8;
@@ -137,6 +141,16 @@ export function getPopularProducts(options = {}) {
 }
 
 export function getSuggestions(query: string, options: GetSuggestionsOptions) {
+    const limit = options.limit || 5;
+
+    return Promise.resolve(
+        productsData.filter(
+            (x) => x.name.toLowerCase().includes(query.toLowerCase()),
+        ).slice(0, limit),
+    );
+}
+
+export function getCategoryLists(query: string, options: GetCategoryLists) {
     const limit = options.limit || 5;
 
     return Promise.resolve(

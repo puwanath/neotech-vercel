@@ -8,6 +8,9 @@ import Document, {
     Main,
     NextScript,
 } from 'next/document';
+import { GetStaticProps, GetStaticPaths, GetServerSideProps } from "next";
+
+
 
 class MyDocument extends Document {
     static async getInitialProps(ctx: DocumentContext) {
@@ -21,7 +24,6 @@ class MyDocument extends Document {
                 <Head>
                     <link rel="shortcut icon" href="/favicon.png" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
                     {/* fonts */}
                     {/* <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" /> */}
                     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -121,5 +123,8 @@ class MyDocument extends Document {
         );
     }
 }
+
+
+
 
 export default MyDocument;
