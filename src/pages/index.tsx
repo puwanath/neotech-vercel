@@ -5,18 +5,13 @@ import React from 'react';
 import { GetServerSideProps } from 'next';
 
 // application
-import HomePage, { InitData } from '../components/home/HomePage';
-import shopApi from '../api/shop';
-
-export interface PageProps {
-    initData?: InitData;
-}
+import HomePage from '../components/home/HomePage';
 
 
-function Page(props: PageProps) {
-    const { initData } = props;
+function Page() {
 
-    return <HomePage initData={initData} />;
+
+    return <HomePage/>;
 }
 
 export default Page;
